@@ -148,6 +148,19 @@ article button {
   margin-bottom: 30px;
 }
 
+/******************************************
+/* value section
+/*******************************************/
+
+.value-section {
+  float: left;
+  width: 100%;
+}
+
+.value-section .value {
+  width: 30%;
+  float: left;
+}
 
 
 /******************************************
