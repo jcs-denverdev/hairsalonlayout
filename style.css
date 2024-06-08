@@ -99,6 +99,8 @@ section.primarySection {
   border-radius: 0 0 ; */
 }
 
+
+
 .primarySection h1 {
   font-size: 8rem;
   width: 50%;
@@ -152,16 +154,25 @@ article button {
 /* value section
 /*******************************************/
 
+header, .primarySection {
+  display: none;
+}
+/* ^ For easier testing of bottom section */
 .value-section {
   float: left;
   width: 100%;
-  margin: 50px 100px;
 }
 
 .value-section .value {
+  border: 1px solid blue;
   width: 30%;
   float: left;
-  padding: 50px 100px;
+  padding: 70px 50px 100px 50px;
+}
+
+.value-section .value img, .value-section .value span, .value-section .value p {
+  border: 1px dashed red;
+  float: left;
 }
 
 
