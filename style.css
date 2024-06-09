@@ -161,10 +161,10 @@ header, .primarySection {
 .value-section {
   float: left;
   width: 100%;
+  padding-left: 100px;
 }
 
 .value-section .value {
-  border: 1px solid blue;
   width: 30%;
   float: left;
   padding: 70px 50px 100px 50px;
@@ -172,8 +172,18 @@ header, .primarySection {
 
 .value-section .value img, .value-section .value span, .value-section .value p {
   border: 1px dashed red;
-  float: left;
+  width: 100%;
 }
+
+.value-section div {
+  margin: 0 150px;
+  padding: 0 2em;
+}
+
+.value div + div, .value div + div + div {
+  padding: 0 0 0 20px;
+}
+
 
 
 /******************************************
