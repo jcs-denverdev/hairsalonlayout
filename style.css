@@ -119,7 +119,7 @@ section > h1 + span + button {
   display: block;
   margin-left: 300px;
   margin-top: 30px;
-  padding: 15px;
+  padding: 15px 15px 15px 30px;;
 }
 
 article {
@@ -154,7 +154,7 @@ article button {
 /* value section
 /*******************************************/
 
-header, .primarySection {
+header, .primarySection, .value-section {
   display: none;
 }
 /* ^ For easier testing of bottom section */
@@ -184,7 +184,40 @@ header, .primarySection {
   padding: 0 0 0 20px;
 }
 
+.momentum-section {
+  background-color: rgb(244, 244, 244);
+  float: left;
+  width: 100%;
+}
 
+.momentum-section section {
+  width: 50%;
+  float: left;
+}
+
+.word-part {
+  padding: 30px 20px 10px 400px;
+}
+
+.word-part h3 {
+  font-size: 3em;  
+  font-family: 'EB Garamond';
+  font-weight: 400;
+}
+
+.word-part button {
+  color: white;
+  background: black;
+  display: block;
+  /* margin-left: 300px;
+  margin-top: 30px; */
+  padding: 15px 15px 15px 30px;
+}
+
+#video-thumbnail img {
+  padding: 50px;
+  width: 50%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
