@@ -154,9 +154,9 @@ article button {
 /* value section
 /*******************************************/
 
-header, .primarySection, .value-section {
+/* header, .primarySection, .value-section {
   display: none;
-}
+} */
 /* ^ For easier testing of bottom section */
 .value-section {
   float: left;
@@ -197,27 +197,58 @@ header, .primarySection, .value-section {
 
 .word-part {
   padding: 30px 20px 10px 400px;
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .word-part h3 {
   font-size: 3em;  
   font-family: 'EB Garamond';
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.word-part p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  padding-right: 100px;
 }
 
 .word-part button {
   color: white;
   background: black;
   display: block;
+  border: outset 2px white;
   /* margin-left: 300px;
   margin-top: 30px; */
-  padding: 15px 15px 15px 30px;
+  padding: 15px 30px;
 }
 
 #video-thumbnail img {
-  padding: 50px;
-  width: 50%;
+  padding: 35px;
+  width: 23%;
+  position: absolute;
 }
+
+#video-thumbnail img + img {
+  position: absolute;
+  width: 7%;
+  color: white;
+  /* bottom: 75%;
+  right: 35%; */
+}
+
+.stylist-section {
+  width: 100%;
+  float: left;
+}
+
+.stylists {
+  width: 33.33%;
+  position: absolute;
+  right: 50%;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
