@@ -59,7 +59,26 @@ table {
   ========================================
 */
 
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
 
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	zoom: 1;
+}
 
 /*
   ========================================
@@ -74,4 +93,51 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+/*
+  ========================================
+  Header/Nav
+  ========================================
+*/
+
+.nav {
+	padding: 20px;
+	display: flex;
+	
+}
+
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+.primary-nav a {
+	text-decoration: none;
+}
+
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+
+.hero {
+	background: url("images/hero-image.jpg");
+	background-repeat: no-repeat;
+}
+
+.hero h1 {
+	padding: 50px;
+}
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
 
