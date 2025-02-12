@@ -64,6 +64,10 @@ body {
 	font-family: "Cinzel", Helvetica, Arial, sans-serif;
 }
 
+.main-2 {
+	background-color: rgb(244,244,246);
+}	
+
 /*
   ========================================
   Clearfix
@@ -99,6 +103,11 @@ body {
           box-sizing: border-box;
 }
 
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
 /*
   ========================================
   Header/Nav
@@ -112,18 +121,20 @@ body {
 }
 
 .nav li {
-	display: inline-block;
+	/* display: inline-block; */
 	margin: 0 10px;
 	vertical-align: top;
+	float: left;
+}
+
+li:first-child {
+	border: 1px solid blue;
 	
 }
 
-.nav li:last-child {
-	margin-right: 0;
-}
-
-.primary-nav a {
-	text-decoration: none;
+li:last-child {
+	border: 1px solid;
+	
 }
 
 /*
@@ -136,7 +147,90 @@ body {
 	color: rgb(62, 62, 62);
 }
 
+.hero h1 {
+	font-size: 4.5rem;
+	padding-top: 15%;
+}
 
+.hero h1,
+.hero h1 + p {
+	color: white;
+}
+
+.hero h1 + p {
+	padding: 20px 0;
+	font-size: 1.2em;
+}
+
+strong {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.black-box {
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	width: 300px;
+	padding: 30px 20px;
+	line-height: 1.5;
+}
+
+.black-box p {
+	padding: 20px 0;
+	font-size: 1.3em;
+}
+
+.white-box {
+	
+}
+
+/* .black-box h4::before {
+	content: '';
+	border: 2px solid #fff;
+} */
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	letter-spacing: .5px;
+	margin: 20px 0;
+	text-transform: uppercase;
+	background-color: black;
+	border: none;
+	padding: 20px 40px;
+}
+
+.btn-alt {
+	border: none;
+	padding: 10px 30px;
+	color: #000;
+	background-color: #fff;
+}
+
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+	text-decoration: none;
+}
 
 /*
   ========================================
@@ -146,12 +240,17 @@ body {
 
 .hero {
 	background: url("images/hero-image.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.hero h1 {
-	padding: 50px;
+/* .vert-transform {
+	writing-mode: vertical-rl;
 }
+
+.hours {
+	color: #fff;
+} */
 
 /*
   ========================================
@@ -159,3 +258,6 @@ body {
   ========================================
 */
 
+.main-1 {
+	float: left;
+}
