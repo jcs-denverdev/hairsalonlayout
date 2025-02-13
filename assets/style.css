@@ -55,29 +55,12 @@ table {
 
 /*
   ========================================
-  Custom styles
+  Custom styles (body, sass variables)
   ========================================
 */
 
 body {
 	font: 16.5px "Raleway", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-}
-
-.black-box {
-	background-color: #000;
-	color: #fff;
-	text-transform: uppercase;
-	border: none;
-	width: 300px;
-	padding: 30px 20px;
-	line-height: 2;
-	margin-top: 50px;
-}
-
-.main-2 {
-	background-color: rgb(244,244,246);
-	display: inline-block;
 }
 
 /*
@@ -120,32 +103,16 @@ body {
 	width: 960px;
 }
 
-/*
-  ========================================
-  Header/Nav
-  ========================================
-*/
-
-.nav {
-	padding: 20px;
-	display: flex;
-	justify-content: center;
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.nav li {
-	/* display: inline-block; */
-	margin: 0 10px;
-	vertical-align: top;
-	float: left;
-}
-
-li:first-child {
-	border: 1px solid blue;
-}
-
-li:last-child {
-	border: 1px solid;
-	
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /*
@@ -153,6 +120,15 @@ li:last-child {
   Typography (font,line-height,color)
   ========================================
 */
+
+.nav,
+.hero,
+.hero p,
+.main-1 h5,
+.main-2 h3,
+.main-2 a {
+	text-transform: uppercase;
+}
 
 .primary-nav a {
 	color: rgb(62, 62, 62);
@@ -178,19 +154,8 @@ strong {
 	font-size: 1.5em;
 }
 
-.black-box {
-	background-color: #000;
-	color: #fff;
-	text-transform: uppercase;
-	border: none;
-	width: 300px;
-	padding: 30px 20px;
-	line-height: 2;
-	margin-top: 50px;
-}
-
 p {
-	text-transform: lowercase;
+	text-transform: capitalize;
 }
 
 .black-box p {
@@ -198,6 +163,9 @@ p {
 	font-size: 1.2em;
 }
 
+.main-2 h3 {
+	font-size: 2em;
+}
 
 
 /* .black-box h4::before {
@@ -212,33 +180,30 @@ p {
 */
 
 .btn {
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: 400;
-	letter-spacing: .5px;
-	margin: 20px 0;
-	text-transform: uppercase;
 	background-color: black;
-	border: none;
+	color: #fff;
+
 	padding: 15px 35px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0;
+	
+	cursor: pointer;
 }
 
 .btn-alt {
-	border: none;
-	padding: 15px 35px;
-	color: #000;
 	background-color: #fff;
+	color: #000;
 }
 
-.btn-alt:hover {
-	background: #fff;
-	color: #648880;
+.btn:hover {
+	background: #7eeec0;
+	color: #000;
 }
 
 /*
   ========================================
-  Links
+  LINKS
   ========================================
 */
 
@@ -248,7 +213,34 @@ a {
 
 /*
   ========================================
-  Hero
+  Header/Nav
+  ========================================
+*/
+
+.nav {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.nav li {
+	/* display: inline-block; */
+	float: left;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+li:first-child {
+	border: 1px solid blue;
+}
+
+li:last-child {
+	border: 1px solid;
+}
+
+/*
+  ========================================
+  HOME
   ========================================
 */
 
@@ -256,6 +248,16 @@ a {
 	background: url("images/hero-image.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.black-box {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	width: 300px;
+	padding: 30px 20px;
+	line-height: 2;
+	margin-top: 50px;
 }
 
 /* .vert-transform {
@@ -298,15 +300,41 @@ a {
 	padding: 0 50px;
 }
 
-.main-2 {
-	padding: 80px;
-}
-
-.main-2 h3 {
-	font-size: 2em;
-}
-
 .main-2 p {
 	padding-top: 30px;
 	
 }
+
+.main-2 {
+	padding: 80px;
+	background-color: rgb(244,244,246);
+	display: inline-block;
+}
+
+/*
+  ========================================
+  Stylists
+  ========================================
+*/
+
+.stylist-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+
+.stylist-info img {
+	border-radius: 50%;
+	height: 130px;
+	margin: -66px 0 22px 0;
+	vertical-align: top;
+}
+
+/*
+  ========================================
+  Offer
+  ========================================
+*/
+
