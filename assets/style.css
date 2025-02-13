@@ -60,14 +60,25 @@ table {
 */
 
 body {
-	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	font: 16.5px "Raleway", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
+}
+
+.black-box {
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	width: 300px;
+	padding: 30px 20px;
+	line-height: 2;
+	margin-top: 50px;
 }
 
 .main-2 {
 	background-color: rgb(244,244,246);
 	display: inline-block;
-}	
+}
 
 /*
   ========================================
@@ -130,7 +141,6 @@ body {
 
 li:first-child {
 	border: 1px solid blue;
-	
 }
 
 li:last-child {
@@ -140,7 +150,7 @@ li:last-child {
 
 /*
   ========================================
-  Typography
+  Typography (font,line-height,color)
   ========================================
 */
 
