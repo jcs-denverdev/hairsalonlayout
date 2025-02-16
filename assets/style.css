@@ -206,21 +206,29 @@ a {
 .nav ul,
 .nav .btn {
 	float: left;
-	width: 33%;
-}
-
-/* .nav ul {
-	display: flex;
-}
-	*/
+	text-align: center;
+}	
 
 .nav li {
 	float: left;
-	margin: 0 10px;
-	
+	padding-left: 65px;
 }
 
+.logo {
+	width: 20%;
+	position: relative;
+	top: 20px;
+}
 
+.nav ul {
+	width: 60%;
+	position: relative;
+	top: 30px;
+}
+
+.nav .btn {
+	width: 20%;
+}
 
 /*
   ========================================
