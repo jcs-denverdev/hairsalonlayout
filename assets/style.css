@@ -119,7 +119,7 @@ body {
 	text-transform: uppercase;
 }
 
-.primary-nav a {
+.nav a {
 	color: rgb(62, 62, 62);
 }
 
@@ -203,8 +203,7 @@ a {
 */
 
 .nav {
-	display: flex;
-	justify-content: center;
+	
 	padding: 20px;
 }
 
@@ -216,11 +215,11 @@ a {
 }
 
 li:first-child {
-	border: 1px solid blue;
+	
 }
 
 li:last-child {
-	border: 1px solid;
+	
 }
 
 /*
